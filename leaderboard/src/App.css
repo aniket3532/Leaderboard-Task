@@ -1,0 +1,142 @@
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  background-color: #f4f7fc;
+  box-shadow: 0 8px 16px rgba(168, 31, 31, 0.1);
+  border-radius: 12px;
+}
+
+
+h1 {
+  color: #2e3a59;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.user-selection {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+select {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #2e3a59;
+  background-color: #fff;
+  border: 2px solid #2e3a59;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  border-color: #56a3f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #56a3f1;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a83d1;
+}
+
+.message {
+  color: #56a3f1;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h2 {
+  color: #2e3a59;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.leaderboard {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+
+
+.leaderboard li:first-child {
+  border: 2px solid #56a3f1;
+  box-shadow: 0 4px 20px rgba(86, 163, 241, 0.5);
+  transform: scale(1.02);
+}
+
+.leaderboard li:nth-child(2) {
+  border: 2px solid #8bc6f9;
+  box-shadow: 0 4px 15px rgba(139, 198, 249, 0.4);
+  transform: scale(1.015);
+}
+
+.leaderboard li:nth-child(3) {
+  border: 2px solid #acd8ff;
+  box-shadow: 0 4px 12px rgba(172, 216, 255, 0.3);
+  transform: scale(1.01);
+}
+
+.leaderboard li {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.leaderboard li:hover {
+  transform: translateY(-3px);
+}
+
+.leaderboard li:nth-child(odd) {
+  background-color: #f0f5ff;
+}
+
+.leaderboard li:nth-child(even) {
+  background-color: #e6f2ff;
+}
+
+.leaderboard li span {
+  font-weight: bold;
+  color: #2e3a59;
+}
+
+.leaderboard li span.rank {
+  font-size: 1.2rem;
+  color: #56a3f1;
+}
