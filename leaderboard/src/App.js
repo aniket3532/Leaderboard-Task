@@ -12,17 +12,20 @@ function App() {
   }, []);
 
   const fetchUsers = async () => {
-    const res = await axios.get('http://localhost:5000/users');
+    const res = await axios.get('https://leaderboard-task.onrender.com/users');
     setUsers(res.data);
   };
 
   const handleClaim = async () => {
     if (!selectedUser) {
       setMessage('Please select a user first!');
+      setTimeout(() => {
+        setMessage('');
+      }, 2000);
       return;
     }
   
-    const res = await axios.post('http://localhost:5000/claim', { userId: selectedUser });
+    const res = await axios.post('https://leaderboard-task.onrender.com/claim', { userId: selectedUser });
     const { updatedUsers, points } = res.data;
   
   
